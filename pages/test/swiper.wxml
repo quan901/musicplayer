@@ -1,0 +1,34 @@
+<!--pages/test/swiper.wxml-->
+<swiper autoplay interval="2000" duration="1000" circular indicator-dots indicator-color="blue" indicator-active-color="red" vertical>
+    <swiper-item style="background:#ccc">0</swiper-item>
+    <swiper-item style="background:#ddd">1</swiper-item>
+    <swiper-item style="background:#eee">2</swiper-item>
+    <swiper-item style="background:#fff">3</swiper-item>
+</swiper>
+
+<swiper current="1">
+    <swiper-item style="background:#ccc">0</swiper-item>
+    <swiper-item style="background:#ddd">1</swiper-item>
+    <swiper-item style="background:#eee">2</swiper-item>
+</swiper>
+
+<swiper current-item-id="c">
+    <swiper-item item-id="a" style="background:#ccc">0</swiper-item>
+    <swiper-item item-id="b" style="background:#ddd">1</swiper-item>
+    <swiper-item item-id="c" style="background:#eee">2</swiper-item>
+</swiper>
+<scroll-view scroll-x scroll-y style="height: 200px" bindtap="onScroll" bindscroll="scroll">
+<image src="../image/iTab-20220320.jpg" style="width: 200%;height: 400px;background: #ccc;"></image>
+</scroll-view>
+
+<switch bindchange="onClick">播放控制</switch>
+
+<view>缩放模式测试</view>
+<image style="width: 500rpx;height: 500rpx;" mode="widthFix" src="../image/iTab-20220320.jpg" binderror="testError">
+</image>
+<view>裁剪模式测试</view>
+<image style="width: 200px;height: 200px;" mode="top left" src="../image/iTab-20220320.jpg">
+</image>
+
+<slider show-value min="20" max="80" step="5" activeColor="red" 
+ backgroundColor="black" block-size="12" block-color="green" bindchange="sliderChange" bindchanging="sliderChanging"/>

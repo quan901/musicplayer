@@ -1,0 +1,17 @@
+/* pages/index/play.wxss */
+/* 播放进度与时间 */
+.content-play-progress{
+    display: flex;
+    align-items: center;
+    margin: 0 35rpx;
+    font-size: 9pt;
+    text-align: center;
+}
+
+
+
+
+.content-play-progress > view{
+    float: 1;
+}
+
